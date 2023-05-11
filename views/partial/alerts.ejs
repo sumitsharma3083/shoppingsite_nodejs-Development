@@ -1,0 +1,30 @@
+<% if(error_msg != '') { %>
+   <p class="alert"><%= error_msg %></p>
+<% } %>
+
+
+<% if(success_msg != '') { %>
+    <p class="success"><%= success_msg %></p>
+ <% } %>
+ 
+
+ <% if(typeof loginerror != 'undefined') { %>
+    <p class="alert"><%= loginerror %></p>
+ <% } %>
+
+<%  if(edit_msg != '') { %>
+   <p class="success_edit"><%= edit_msg %></p>
+<% } %>
+
+<%  if(delete_msg != '') { %>
+   <p class="success_delete"><%= delete_msg %></p>
+<% } %>
+
+<%  if(add_msg != '') { %>
+   <p class="success_add"><%= add_msg %></p>
+<% } %>
+
+<%  if(email_change_msg != '') { %>
+   <p class="success_add"><%= email_change_msg %></p>
+<% } %>
+

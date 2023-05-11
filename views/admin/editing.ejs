@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="/css/hamburg.css">
+    <link rel="stylesheet" href="/css/editing.css">
+    <link rel="stylesheet" href="/css/navigate.css">
+</head>
+<body>
+   
+     <main class="main-header">    
+         <form action="/admin/edit-done" method="POST" class="edit-form" enctype="multipart/form-data">
+              <input type="hidden" name="getId" value=<%= Product._id  %>>
+             <label for="title">Title</label>
+             <input type="text" name="title" value="<%=  Product.title %>">
+             <label for="price">Price</label>
+             <input type="text" name="price" value=<%= Product.price %>>
+             <label for="description">Description</label>
+            <textarea name="description" id="" cols="30" rows="10" ><%=Product.description %></textarea>
+            <input type="file" name="myimage">
+             <button type="submit" class="btn">
+               Edit 
+             </button>
+         </form>
+     </main>
+     <script src="/js/effect.js">
+     </script>
+</body>
+</html>

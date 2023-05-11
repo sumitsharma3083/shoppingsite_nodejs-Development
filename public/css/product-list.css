@@ -1,0 +1,103 @@
+.grid
+{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+.product-item
+{
+    font: inherit;
+    text-align: center;
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    font-family: sans-serif;
+    -webkit-box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+}
+.card-header
+{
+    background-color: #eee;
+}
+.card-content
+{
+    background-color: #eee;
+}
+.card-image,
+.card-image img
+{
+    height : 200px;
+width: 100%;
+}
+.card-image{
+border-bottom: 1px solid #000;
+}
+.product-title{
+text-transform: capitalize;
+}
+.product-description{
+text-transform: capitalize;
+}
+.btn
+{
+    border-radius: 3px;
+    border: 1px solid #dbc441;
+    color: #dbc441;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #dbc441;
+    color: #fff;
+}
+.detail_link
+{
+    text-decoration: none;
+    color: #dbc441;
+    border: 1px solid #dbc441;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.detail_link:hover{
+    color: #fff;
+    background-color: #dbc441;
+}
+
+
+
+
+.login-ul
+{
+    list-style-type: none;
+}
+.login-link
+{
+    text-decoration: none;
+    color: #000;
+}
+.login-link:hover{
+    color: #6200ff
+}
+
+.center
+{
+    text-align: center
+}
+
+@media(max-width: 600px){
+    .grid
+    {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    } 
+    .product-item{
+        margin-top: 20px;
+    } 
+
+}

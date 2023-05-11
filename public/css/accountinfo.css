@@ -1,0 +1,212 @@
+body{
+    font-family: sans-serif;
+}
+.container
+{
+    width: 70%;
+    margin: auto;
+    border: 1px solid #DAE0E2; 
+}
+.account_text_area
+{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #DAE0E2;
+}
+.account_email_area
+{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dae0e2;
+    padding: 20px 0px;
+}
+.account_email_area button{
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    background-color: #E84342;
+    color: #fff;
+    cursor: pointer;
+}
+.account_email_area button:active{
+    outline: 0;
+}
+
+.account_email_area p
+{
+    font-size: 1rem;
+    border: 1px solid #dae0e2;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0px;
+
+}
+.account_email_area .email_text
+{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.account_email_area  .email_show
+{
+  font-weight: bolder;
+}
+
+
+.account_password_area
+{
+    padding: 50px;
+}
+.account_password_area form
+{
+    width: 70%;
+    margin: auto;
+
+}
+.account_password_area form *{
+    display: block;
+    width: 100%;
+}
+
+.account_password_area form  input{
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+.account_password_area form button{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #E84342;
+    color: #fff;
+}
+.account_password_area form button:active
+{
+    outline: none;
+}
+
+.email_change_form
+{
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    z-index: 10;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #dae0e2;
+    padding: 50px;
+    min-height: 150px;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+    transition : all 0.5s
+}
+.email_change_form form{
+   
+    width: 70%;
+    margin: auto;
+   
+} 
+
+.email_change_form form *
+{
+    display: block;
+    margin-bottom: 1rem;
+}
+.email_change_form form input{
+    width: 100%;
+    padding: 10px 0px;
+
+}
+.email_change_form form button{
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #E84342;
+    color: #fff;
+    cursor: pointer;
+}
+.email_change_form form button:active
+{
+    outline:  none;
+}
+.overlay
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: none;
+}
+#cross_btn
+{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: none;
+    font-weight: bold;
+    border:none;
+    font-size: 2rem;
+    cursor: pointer;  
+}
+#cross_btn:active{
+    outline: none;
+}
+
+.error_msg
+{
+    border: 1px solid #e92a19;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0px;
+    color: #e92a19;
+    text-transform: capitalize;
+    width: 50%;
+    margin: auto;
+}
+.alert
+ {
+     border: 1px solid #E44236;
+     width: 100%;
+     box-sizing: border-box;
+     text-align: center;
+     border-radius: 3px;
+     padding: 5px 0px;
+     color: #E44236;
+     text-transform: capitalize;
+ }
+ @media(max-width: 600px){
+.container
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.account_password_area
+{
+    padding: 50px;
+}
+.account_password_area form
+{
+    width: 100%;
+    margin: auto;
+
+}
+.email_change_form
+{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 10;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #dae0e2;
+    padding: 50px;
+    min-height: 150px;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+    transition : all 0.5s
+}
+ }

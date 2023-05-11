@@ -1,0 +1,21 @@
+.center
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font: inherit;
+}
+
+
+.login-ul
+{
+    list-style-type: none;
+}
+.login-link
+{
+    text-decoration: none;
+    color: #000;
+}
+.login-link:hover{
+    color: #6200ff
+}

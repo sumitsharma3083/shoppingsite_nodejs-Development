@@ -1,0 +1,53 @@
+.form-control{
+    margin: 1rem 0;
+ }
+ .form-control label,
+ .form-control input,
+ .form-control textarea
+ {
+ display: block;
+ width: 100%;
+ }
+ .form-control input,
+ .form-control textarea
+ {
+     border: 1px solid #dbc441;
+     font: inherit;
+     border-radius: 2px;
+ }
+ .form-control button{
+      font: inherit;
+      border: 1px solid #6200ff;
+      color: #6200ff;
+      background: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+ }
+ .form-control button:hover,
+ .form-control button:active{  
+        background-color: #6200ff;
+        color: #fff;
+ }
+ .product-form
+ {
+     width: 20rem;
+     max-width: 90%;
+     margin: auto;
+ }
+
+ .warn_msg
+ {
+     text-align: center;
+     color: red;
+ }
+ .alert
+ {
+     border: 1px solid #E44236;
+     width: 100%;
+     box-sizing: border-box;
+     text-align: center;
+     border-radius: 3px;
+     padding: 5px 0px;
+     color: #E44236;
+     text-transform: capitalize;
+ }

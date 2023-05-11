@@ -1,0 +1,138 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+.main-header{
+   width: 100%;
+   height: 3.5rem;
+   background-color: #dbc441;
+   padding: 0 1.5rem;
+}
+.main-header_nav
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-header_item-list
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+.main-header_item
+{
+ padding: 0;
+ margin: 0 1rem;
+
+}
+.main-header_item a{
+   text-decoration: none;
+   color: #000;
+}
+.main-header_item a:hover,
+.main-header_item a:active,
+.main-header_item a.active
+{
+   color: #6200ff;
+}
+article{
+    padding-bottom: 10px;
+}
+.grid
+{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+.product-item
+{
+    font: inherit;
+    text-align: center;
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    font-family: sans-serif;
+    -webkit-box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 8px 25px -4px rgba(0,0,0,0.75);
+}
+.card-header
+{
+    background-color: #eee;
+}
+.card-content
+{
+    background-color: #eee;
+}
+.cart_link{
+    text-decoration: none;
+    color: #dbc441;
+    border: 1px solid #dbc441;
+    padding : 3px 7px;
+    border-radius: 4px;
+}
+.card-image,
+.card-image img
+{
+height : 200px;
+width: 100%;
+}
+.card-image{
+    border-bottom: 1px solid #000;
+}
+.product-title{
+text-transform: capitalize;
+}
+.product-description{
+    text-transform: capitalize;
+}
+.btn
+{
+    border-radius: 3px;
+    border: 1px solid #dbc441;
+    color: #dbc441;
+    background-color: #fff;
+}
+.btn:hover{
+    background-color: #dbc441;
+    color: #fff;
+}
+
+
+
+
+.login-ul
+{
+    list-style-type: none;
+}
+.login-link
+{
+    text-decoration: none;
+    color: #000;
+}
+.login-link:hover{
+    color: #6200ff
+}
+.center
+{
+    text-align: center
+}
+
+@media(max-width: 600px){
+.grid
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.product-item{
+    margin-top: 20px;
+} 
+}

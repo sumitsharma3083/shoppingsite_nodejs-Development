@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/navigate.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/accountinfo.css">
+    <link rel="stylesheet" href="/css/hamburg.css">
+</head>
+<body>
+     <%- include ../partial/navigation.ejs  %>
+    <div class="overlay">
+
+    </div>
+     <div class="container">
+         <div class="account_text_area">
+             <h1>Account</h1>
+             <p class="mytext">Edit your account settings and change your password here</p>
+         </div>
+         <div class="account_email_area">
+             <span class="email_text">Email</span>
+             <p>Your email Address is <span class="email_show"><%= user.email  %></span> <button id="edit_email_btn">Edit</button></p>  
+         </div>
+         <div class="account_password_area">
+              <form action="/account/changepassword" method="POST">
+                   <div>
+                        <label>Change Password</label>
+                        <input type="text" name="currentpassword" placeholder="Enter Current password" required >
+                   </div>
+                   <div>
+                        <input type="text" name="newpassword" placeholder="Enter New Password" required>
+                   </div>
+                   <div>
+                        <input type="text" name="newpassword2" placeholder="Confirm New Password" required>
+                   </div>
+                     <div>
+                            <button type="submit">
+                                    Change Password
+                            </button>
+                     </div>    
+              </form>
+         </div>
+     </div>
+      <div class="email_change_form">
+           <button id="cross_btn">&Cross;</button>
+          <form action="/account/changeemail" method="post" >
+              <label>Change Your Email:</label>
+              <input type="email" name="email" value="<%= user.email %>">
+              <button type="submit">
+                  Change Email
+              </button>
+          </form>
+      </div>
+
+     <script src="/js/effect.js">
+     </script>
+</body>
+</html>

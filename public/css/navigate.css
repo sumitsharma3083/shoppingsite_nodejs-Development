@@ -1,0 +1,85 @@
+.main-header_item_special
+{
+    box-sizing: border-box;
+    width: 150px;
+}
+.user_btn
+{
+    width: 100% !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    font-family: sans-serif !important;
+    font: inherit !important;
+    background: none !important;
+    cursor: pointer !important;
+    text-transform: capitalize;
+}
+.user_btn:focus {outline:0;}
+.suboption
+{
+   
+   position: absolute;
+   background-color: #fff;
+   width: 200px;
+   border-radius: 10px;
+   border-left: 1px solid #dbc441;
+   border-right: 1px solid #dbc441;
+   border-bottom: 1px solid #dbc441;
+   margin-top: 8px;
+}
+.arrow{
+    position: relative;
+    bottom: 5px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    margin: auto;
+    transform: rotate(41deg);  
+ }
+
+#show
+{
+    display: block;
+}
+#hide
+{
+   display: none;
+}
+.suboption a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0px;
+    text-align: center;
+   
+}
+.order_link
+{
+ background-color: #dbc441;
+ color: #fff;
+ transition: all 0.5s;
+}
+.order_link:hover
+{
+ background-color: #8d790a;
+
+}
+.account_link
+{
+    background-color: #dbc441;
+    color: #fff;
+    transition: all 0.5s;
+}
+.account_link:hover
+{
+    background: #8d790a;
+}
+.logout_link
+{
+  background-color: #dbc441;
+  color: #fff;
+  transition: all 0.5s
+}
+.logout_link:hover{
+    background-color: #8d790a;
+}

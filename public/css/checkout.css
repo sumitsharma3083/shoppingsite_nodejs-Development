@@ -1,0 +1,14 @@
+.container
+{
+    width: 30%;
+    margin: auto;
+  
+}
+.order-info
+{
+    width: 100%;
+  text-align: center;
+   border: 1px solid #dbc441;
+   margin-top: 50px;
+   border-radius: 5px;
+}

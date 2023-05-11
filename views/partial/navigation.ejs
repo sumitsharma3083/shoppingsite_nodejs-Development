@@ -1,0 +1,54 @@
+<header class="main-header">
+    <nav class="main-header_nav">
+        <button class="hamburg_menu">
+        <i class="fas fa-bars"></i>
+        </button>
+        <ul class="main-header_item-list">
+            <li class="main-header_item"><a href="/shop">Shop</a></li>
+            <li class="main-header_item"><a href="/products">Products</a></li>
+
+            <%  if(typeof isAuthenticate != 'undefined') { %>
+            <li class="main-header_item"><a href="/admin/add-product">Add Product</a></li>
+            <!-- <li class="main-header_item"><a href="/cart">Cart</a></li> -->
+            <li class="main-header_item"><a href="/admin/edit-products">Admin Products</a></li> 
+            <li  class="main-header_item_special">
+                <button class="user_btn">
+                    <%= typeof name != 'undefined' ? name : '' %>
+                </button>
+                <div class="suboption" id="hide">
+                    <div class="arrow">
+
+                    </div>
+                   <a href="/account/personal" class="account_link"><i class="far fa-user"></i>Your Account</a>
+                   <a href="/logout" class="logout_link"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </li>
+            <% } %>
+             
+            <% if(typeof isAuthenticate == 'undefined') { %>
+            <li class="main-header_item right"><a href="/login">Login</a></li>
+            <% } %>
+
+            <% if(typeof isAuthenticate == 'undefined') { %>
+            <li class="main-header_item right"><a href="/register"><i class="fas fa-user-plus"></i></a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>
+<ul id="sub_menu" value="hide">
+    <div class="new_arrow">
+
+    </div>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/products">Products</a></li>
+   <% if(typeof isAuthenticate != 'undefined'){ %>
+        <li><a href="/admin/add-product">Add Product</a></li>
+     <li><a href="/admin/edit-products">Admin Products</a></li>
+     <li><a href="/account/personal">Your account</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <%} else {%>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register"><i class="fas fa-user-plus"></i></a></li>
+        <% } %>
+</ul>
+
