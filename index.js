@@ -5,6 +5,8 @@ const session           = require('express-session')
 const SessionStore      = require('connect-mongodb-session')(session)
 const flash             = require('connect-flash')
 const mongoose          = require('mongoose')
+require('dotenv').config();
+
 
      // Accessing the Route files
       const ShopRoute         = require('./routes/shop')
@@ -21,7 +23,7 @@ const mongoose          = require('mongoose')
 
 
      const Store   = new SessionStore({
-           uri: 'mongodb+srv://sumit:sumit123@cluster0-x042n.mongodb.net/shoppingsite',
+           uri: process.env.MONGOURI,
            collection : 'session'
      })
 
@@ -55,8 +57,10 @@ const mongoose          = require('mongoose')
         app.use(authRoute)
         app.use('/account',AccountRoute)
         app.use(errorController)
+
+
         
-      mongoose.connect('mongodb+srv://sumit:sumit123@cluster0-x042n.mongodb.net/shoppingsite?retryWrites=true')
+      mongoose.connect(process.env.MONGOURI)
       .then((result) => {
             console.log("Database connection successful")
             app.listen(3000)
