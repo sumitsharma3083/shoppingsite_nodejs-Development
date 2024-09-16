@@ -60,7 +60,7 @@ require('dotenv').config();
 
 
         
-      mongoose.connect(process.env.MONGOURI)
+      mongoose.connect(process.env.MONGOURI, {dbName : "shop"})
       .then((result) => {
             console.log("Database connection successful")
             app.listen(3000)
